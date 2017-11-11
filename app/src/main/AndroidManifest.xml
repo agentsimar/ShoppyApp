@@ -11,7 +11,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".OpenScreen"
+        <activity
+            android:name=".OpenScreen"
             android:screenOrientation="portrait">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -19,13 +20,21 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".newUser" />
-        <activity android:name=".MainAppPage"
+        <activity
+            android:name=".newUser"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".MainAppPage"
             android:label="@string/title_activity_main_app_page"
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme.NoActionBar" />
+
         <activity android:name=".ShoppingCartWindow" />
-        <activity android:name=".IndividualProduct" />
+
+        <activity android:name=".IndividualProduct"
+            android:label="@string/title_activity_individual_product"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar"/>
         <activity android:name=".CheckOutScreen"></activity>
     </application>
 
